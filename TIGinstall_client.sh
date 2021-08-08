@@ -79,6 +79,7 @@ cat << EOF >> /etc/telegraf/telegraf.conf
 EOF
 
 echo "#### Starting Telegraf services:"
+service telegraf stop
 service telegraf start
 
 echo "### Finished Telegraf setup"
